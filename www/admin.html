@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel - Update Beds</title>
+  <link rel="stylesheet" href="/www/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Admin Panel</h1>
+    <nav><a href="/www/index.html">Back to Dashboard</a></nav>
+  </header>
+
+  <main class="container">
+    <form id="updateForm" class="card">
+      <h2>Update Bed Availability</h2>
+      <label>
+        Hospital
+        <input type="text" id="hospital" required />
+      </label>
+      <label>
+        Ward
+        <select id="ward" required>
+          <option>General</option>
+          <option>ICU</option>
+          <option>Emergency</option>
+          <option>Operation</option>
+        </select>
+      </label>
+      <label>
+        Total Beds
+        <input type="number" id="total" min="0" value="0" required />
+      </label>
+      <label>
+        Available Beds
+        <input type="number" id="available" min="0" value="0" required />
+      </label>
+      <button type="submit">Submit Update</button>
+      <div id="formMsg" class="msg"></div>
+    </form>
+  </main>
+
+  <script src="/www/admin.js"></script>
+</body>
+</html>

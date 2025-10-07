@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>India Hospital Bed Availability</title>
+  <link rel="stylesheet" href="/www/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>India Hospital Bed Availability</h1>
+    <div class="updated" id="lastUpdated">—</div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="searchHospital" type="text" placeholder="Search hospital..." />
+      <select id="filterWard">
+        <option value="">All Wards</option>
+        <option>General</option>
+        <option>ICU</option>
+        <option>Emergency</option>
+        <option>Operation</option>
+      </select>
+      <button id="refreshBtn">Refresh</button>
+    </section>
+
+    <section class="table-section">
+      <table id="bedsTable">
+        <thead>
+          <tr>
+            <th data-sort="hospital">Hospital</th>
+            <th data-sort="ward">Ward</th>
+            <th data-sort="total">Total Beds</th>
+            <th data-sort="available">Available</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="wards">
+      <h2>By Ward</h2>
+      <div class="ward-grid">
+        <div class="ward" id="ward-General">
+          <h3>General</h3>
+          <ul class="ward-list"></ul>
+        </div>
+        <div class="ward" id="ward-ICU">
+          <h3>ICU</h3>
+          <ul class="ward-list"></ul>
+        </div>
+        <div class="ward" id="ward-Emergency">
+          <h3>Emergency</h3>
+          <ul class="ward-list"></ul>
+        </div>
+        <div class="ward" id="ward-Operation">
+          <h3>Operation</h3>
+          <ul class="ward-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Map (Optional)</h2>
+      <div class="map-placeholder">Interactive India map can be integrated here.</div>
+    </section>
+  </main>
+
+  <div id="chatbot" class="chatbot">
+    <button id="chatToggle" class="chat-toggle">Emergency Chat</button>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-log" id="chatLog"></div>
+      <div class="chat-input">
+        <input id="chatText" type="text" placeholder="Describe your emergency or location..." />
+        <button id="chatSend">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/www/main.js"></script>
+</body>
+</html>
