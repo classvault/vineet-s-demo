@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HealthBeds India — Real-time Hospital Beds</title>
+  <link rel="stylesheet" href="/assets/main.css" />
+  <style>
+    .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap:24px; align-items:center; padding:40px 0; }
+    .hero h1 { font-size: 36px; margin: 0 0 10px; }
+    .hero p { opacity: 0.9; line-height: 1.6; }
+    .hero .cta { display:flex; gap:12px; margin-top:18px; }
+    .pill { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #1e3a52; border-radius:999px; background:#0f2032; color:#9ed0ff; font-size:13px; }
+    .features { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:20px; }
+    .feature { background:#0f2032; border:1px solid #1e3a52; border-radius:10px; padding:14px; }
+    .feature h3 { margin:0 0 8px; color:#9ed0ff; font-size:15px; }
+    .dash-preview { background:#0f2032; border:1px dashed #1e3a52; border-radius:12px; padding:16px; }
+    .section-muted { opacity:0.85; font-size:13px; }
+    .footer { margin: 30px 0 10px; opacity: 0.7; font-size: 13px; }
+    @media (max-width: 900px){ .hero{ grid-template-columns:1fr; } .features{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HealthBeds India</h1>
+    <div class="actions">
+      <a href="/dashboard.html">Live Dashboard</a>
+      <a href="/admin.html">Admin Panel</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <div>
+        <span class="pill">Real-time beds across India</span>
+        <h1>Find critical care faster</h1>
+        <p>Track live availability for General, ICU, Emergency, and Operation wards.
+          Updated every few seconds from participating hospitals.</p>
+        <div class="cta">
+          <a class="primary" href="/dashboard.html" style="padding:12px 14px; border-radius:8px;">Open Live Dashboard</a>
+          <a class="primary" href="/admin.html" style="padding:12px 14px; border-radius:8px; background:#15395a;">Update as Hospital</a>
+        </div>
+        <div class="section-muted" id="heroStats" style="margin-top:12px;">Loading stats…</div>
+      </div>
+      <div class="dash-preview">
+        <div class="cards">
+          <div class="card"><h3>General</h3><div id="generalSummary">—</div></div>
+          <div class="card"><h3>ICU</h3><div id="icuSummary">—</div></div>
+          <div class="card"><h3>Emergency</h3><div id="emergencySummary">—</div></div>
+          <div class="card"><h3>Operation</h3><div id="operationSummary">—</div></div>
+        </div>
+        <div class="table-wrap" style="margin-top:12px;">
+          <table>
+            <thead><tr><th>Hospital</th><th>Ward</th><th>Total</th><th>Available</th></tr></thead>
+            <tbody id="heroTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature"><h3>Live updates</h3><p>Automatic refresh every few seconds with change alerts.</p></div>
+      <div class="feature"><h3>AI assistance</h3><p>Ask for nearby beds; we suggest options.</p></div>
+      <div class="feature"><h3>Nationwide map</h3><p>See availability hotspots across India on a live map.</p></div>
+    </div>
+
+    <div class="footer">Made for rapid response. Data is indicative; verify with hospitals.</div>
+  </div>
+  <script src="/assets/landing.js"></script>
+</body>
+</html>

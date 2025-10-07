@@ -1,0 +1,13 @@
+# hospital_name|ward_type|total_beds|available_beds|lat|lng
+AIIMS Delhi|General|200|35|28.5672|77.2100
+AIIMS Delhi|ICU|50|7|28.5672|77.2100
+AIIMS Delhi|Emergency|30|4|28.5672|77.2100
+AIIMS Delhi|Operation|20|3|28.5672|77.2100
+KEM Mumbai|General|250|58|18.9716|72.8194
+KEM Mumbai|ICU|60|5|18.9716|72.8194
+KEM Mumbai|Emergency|40|6|18.9716|72.8194
+KEM Mumbai|Operation|25|4|18.9716|72.8194
+CMC Vellore|General|180|22|12.9260|79.1333
+CMC Vellore|ICU|45|1|12.9260|79.1333
+CMC Vellore|Emergency|35|2|12.9260|79.1333
+CMC Vellore|Operation|18|1|12.9260|79.1333
