@@ -1,0 +1,32 @@
+AIIMS Delhi	General	200	45
+AIIMS Delhi	ICU	50	5
+AIIMS Delhi	Emergency	30	2
+AIIMS Delhi	Operation	10	1
+Apollo Hospital Chennai	General	180	60
+Apollo Hospital Chennai	ICU	40	11
+Apollo Hospital Chennai	Emergency	25	4
+Apollo Hospital Chennai	Operation	12	3
+Fortis Hospital Mumbai	General	220	80
+Fortis Hospital Mumbai	ICU	55	10
+Fortis Hospital Mumbai	Emergency	28	3
+Fortis Hospital Mumbai	Operation	14	2
+Narayana Health Bengaluru	General	250	90
+Narayana Health Bengaluru	ICU	70	12
+Narayana Health Bengaluru	Emergency	35	5
+Narayana Health Bengaluru	Operation	16	4
+PGIMER Chandigarh	General	210	65
+PGIMER Chandigarh	ICU	60	7
+PGIMER Chandigarh	Emergency	27	3
+PGIMER Chandigarh	Operation	13	2
+KEM Hospital Pune	General	190	70
+KEM Hospital Pune	ICU	45	6
+KEM Hospital Pune	Emergency	22	4
+KEM Hospital Pune	Operation	11	2
+CMC Vellore	General	230	85
+CMC Vellore	ICU	65	9
+CMC Vellore	Emergency	32	6
+CMC Vellore	Operation	15	3
+Ruby Hall Clinic Pune	General	160	50
+Ruby Hall Clinic Pune	ICU	38	6
+Ruby Hall Clinic Pune	Emergency	20	3
+Ruby Hall Clinic Pune	Operation	9	1
